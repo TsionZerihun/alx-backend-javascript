@@ -1,26 +1,19 @@
 {
-  "name": "alx-backend-javascript",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://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@github.com/TsionZerihun/alx-backend-javascript.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TsionZerihun/alx-backend-javascript/issues"
-  },
-  "homepage": "https://github.com/TsionZerihun/alx-backend-javascript#readme",
-  "devDependencies": {
-    "@babel/core": "^7.20.12",
-    "@babel/preset-env": "^7.20.2",
-    "babel-jest": "^29.4.3",
-    "eslint": "^8.34.0",
-    "jest": "^29.4.3"
+	"scripts": {
+	  "lint": "./node_modules/.bin/eslint",
+	  "check-lint": "lint [0-9]*.js",
+	  "dev": "npx babel-node",
+	  "test": "jest",
+	  "full-test": "./node_modules/.bin/eslint [0-9]*.js && jest"
+	},
+	"devDependencies": {
+	  "@babel/core": "^7.6.0",
+	  "@babel/node": "^7.8.0",
+	  "@babel/preset-env": "^7.6.0",
+	  "eslint": "^6.4.0",
+	  "eslint-config-airbnb-base": "^14.0.0",
+	  "eslint-plugin-import": "^2.18.2",
+	  "eslint-plugin-jest": "^22.17.0",
+	  "jest": "^24.9.0"
+	}
   }
-}
