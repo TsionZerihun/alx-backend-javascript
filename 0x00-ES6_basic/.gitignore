@@ -1,2 +1,4 @@
-0-main.js
-node_modules/
+node_modules
+/node_modules
+./node_modules
+*main.js
