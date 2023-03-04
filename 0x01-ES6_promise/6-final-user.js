@@ -1,7 +1,7 @@
 import signUpUser from './4-user-promise';
 import uploadPhoto from './5-photo-reject';
 
-export default async function handleProfileSignu(firstName, lastName, fileName) {
+export default async function handleProfileSignup(firstName, lastName, fileName) {
   const user = { status: 'pending', value: '' };
   const photo = { status: 'pending', value: '' };
 
@@ -19,8 +19,8 @@ export default async function handleProfileSignu(firstName, lastName, fileName) 
     photo.status = 'fulfilled';
     photo.value = upload;
   } catch (error) {
-    user.status = 'rejected';
-    user.value = error.toString;
+    photo.status = 'rejected';
+    photo.value = error.toString();
   }
 
   return [user, photo];
